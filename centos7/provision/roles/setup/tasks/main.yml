@@ -1,0 +1,9 @@
+---
+# tasks file for setup
+- name: Ensure to install packages.
+  yum:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items: "{{ yum_packages }}"
+  when: yum_packages
+...
