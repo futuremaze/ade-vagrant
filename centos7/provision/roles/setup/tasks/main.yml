@@ -6,4 +6,10 @@
     state: "{{ item.state | default('latest') }}"
   with_items: "{{ yum_packages }}"
   when: yum_packages
+
+- name: Update packages.
+  yum:
+    name: '*'
+    state: latest
+
 ...
