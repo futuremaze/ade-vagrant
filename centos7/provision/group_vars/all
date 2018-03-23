@@ -1,4 +1,7 @@
 install_packages:
   - git
   - vim
+  - Development_tools:
+    name: "@Development tools"
+    state: present
 
