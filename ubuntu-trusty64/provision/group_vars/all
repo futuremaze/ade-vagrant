@@ -1,4 +1,4 @@
 install_packages:
   - git
   - vim
-
+  - build-essential
