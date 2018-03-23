@@ -6,7 +6,7 @@ CPUS = 2 # core count.
 MEMORY_SIZE = 4096 # MB unit.
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.1.0/centos-7.0-x86_64.box"
+  config.vm.box = "centos/7"
   config.vm.hostname = HOSTNAME + ".local"
 
   config.vm.provider "virtualbox" do | vm |
