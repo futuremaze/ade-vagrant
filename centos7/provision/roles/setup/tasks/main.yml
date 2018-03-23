@@ -4,8 +4,8 @@
   yum:
     name: "{{ item.name | default(item) }}"
     state: "{{ item.state | default('latest') }}"
-  with_items: "{{ yum_packages }}"
-  when: yum_packages
+  with_items: "{{ install_packages }}"
+  when: install_packages
 
 - name: Update packages.
   yum:

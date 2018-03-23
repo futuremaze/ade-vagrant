@@ -1,4 +1,4 @@
-yum_packages:
+install_packages:
   - git
   - vim
 
