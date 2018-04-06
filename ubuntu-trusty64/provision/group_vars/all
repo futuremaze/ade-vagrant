@@ -3,3 +3,4 @@ install_packages:
   - vim
   - build-essential
   - python-sphinx
+  - texlive-full
