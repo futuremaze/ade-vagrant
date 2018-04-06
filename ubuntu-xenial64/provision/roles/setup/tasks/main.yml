@@ -1,0 +1,21 @@
+---
+# tasks file for setup
+- name: Update packages.
+  apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: ensure to install packages.
+  apt:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items: "{{ install_packages }}"
+  when: install_packages
+
+- name: Ensure to pip packages.
+  pip:
+    name: "{{ item.name | default(item) }}"
+    state: "{{ item.state | default('latest') }}"
+  with_items: "{{ pip_packages }}"
+  when: pip_packages
+...

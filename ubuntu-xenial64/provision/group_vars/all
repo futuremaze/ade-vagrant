@@ -1,0 +1,11 @@
+install_packages:
+  - git
+  - vim
+  - build-essential
+  - python-sphinx
+  - python-pip
+  - texlive-full
+  - plantuml
+
+pip_packages:
+  - sphinxcontrib-plantuml
