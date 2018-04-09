@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-HOSTNAME = "ultima"
+HOSTNAME = "unicorn"
 CPUS = 2 # core count.
 MEMORY_SIZE = 4096 # MB unit.
 
